@@ -44,25 +44,27 @@ serializers:
 ### Obs.: 
 - Painel admin está pronto para uso;
 - Caso prefira usar o sqlite pode ser alterado o banco de dados que já está configurado no arquivo setting.py
-        ''' 
-            """DATABASES = {
-                    'default': {
-                            'ENGINE': 'django.db.backends.sqlite3',
-                            'NAME': BASE_DIR / 'db.sqlite3',
-                      }
-                }"""
-        ''''
-
-        '''
-           DATABASES = {
-                        'default': {
-                        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                        'NAME': 'postgres',
-                        'USER': 'postgres',
-                        'PASSWORD': 'postgres',
-                        'HOST': 'database',
-                        'PORT': '5432',
-                           }
+    
+  - Banco Opcional
+    ''' 
+               DATABASES = {
+                      'default': {
+                              'ENGINE': 'django.db.backends.sqlite3',
+                              'NAME': BASE_DIR / 'db.sqlite3',
                         }
-        '''
+                  }
+          ''''
+    - Banco em produção
+          '''
+             DATABASES = {
+                          'default': {
+                          'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                          'NAME': 'postgres',
+                          'USER': 'postgres',
+                          'PASSWORD': 'postgres',
+                          'HOST': 'database',
+                          'PORT': '5432',
+                             }
+                          }
+          '''
 
