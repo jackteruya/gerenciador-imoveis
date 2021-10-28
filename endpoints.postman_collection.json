@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "824f8ed5-1e24-47a5-9011-5ba1b9217657",
+		"name": "endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "anfitriao",
+			"item": [
+				{
+					"name": "Listar anfitriões",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/anfitriao/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar anfitrao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Carlos Antonio Navegador\",\n    \"telefone\": \"65035051503\",\n    \"email\": \"carlos@imovel.com\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/anfitriao/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar anfitriao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Carlos Antonio Navegador\",\n    \"telefone\": \"65035051503\",\n    \"email\": \"carlos.antotnio@imovel.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/anfitriao/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar Anfitriao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/anfitriao/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar anfitriao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/anfitriao/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hospede",
+			"item": [
+				{
+					"name": "Listar hospedes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/hospede/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"hospede",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar hospede",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Flavio Atoa\",\n    \"numero_documento\": \"16513fg3sdg\",\n    \"telefone\": \"67666231353\",\n    \"email\": \"flavio@gmail.com\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/anfitriao/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"anfitriao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar hospede",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Flavio Ocupado\",\n    \"numero_documento\": \"16513fg3sdg\",\n    \"telefone\": \"67665231353\",\n    \"email\": \"flavio.ocupado@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/hospede/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"hospede",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar hospede",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/hospede/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"hospede",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar hospede",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/hospede/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"hospede",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "imovel",
+			"item": [
+				{
+					"name": "Listar imoveis",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/imovel/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"imovel",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar imovel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"logradoro\": \"Av. 1010\",\n    \"numero\": \"15\",\n    \"bairro\": \"Centro\",\n    \"complemento\": \"\",\n    \"cep\": \"09045082\",\n    \"cidade\": \"Florianopolis\",\n    \"uf\": \"SANTA CATARINA\",\n    \"valor_diaria\": \"150.00\",\n    \"quantidade_pessoas\": 6,\n    \"pets\": true,\n    \"quantidade_pets\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/imovel/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"imovel",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar imovel",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"logradoro\": \"Rua 2 mil\",\n    \"numero\": \"105\",\n    \"bairro\": \"Centro\",\n    \"complemento\": \"\",\n    \"cep\": \"09045082\",\n    \"cidade\": \"Florianopolis\",\n    \"uf\": \"SANTA CATARINA\",\n    \"valor_diaria\": \"150.00\",\n    \"quantidade_pessoas\": 6,\n    \"pets\": true,\n    \"quantidade_pets\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/imovel/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"imovel",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar imovel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/imovel/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"imovel",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar imovel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/imovel/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"imovel",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "to_do",
+			"item": [
+				{
+					"name": "Listar ToDos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/to-do/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"to-do",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar ToDo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"data\": \"2021-10-28T12:00:00Z\",\n    \"status\": false,\n    \"tarefa\": \"limpeza\",\n    \"anfitriao\": \"\", // informar id\n    \"reserva\": null, // informar id \n    \"imovel\": \"\" // informar id\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/to-do/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"to-do",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar ToDo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"2021-10-28T12:00:00Z\",\n    \"status\": false,\n    \"tarefa\": \"manutecao\",\n    \"anfitriao\": \"905e4f11-d8e5-41e7-a8cb-fe3d7b439b48\",\n    \"reserva\": null,\n    \"imovel\": \"e88e2239-007a-4299-af0e-b70b28e9ff11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/to-do/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"to-do",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar ToDo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/to-do/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"to-do",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar ToDo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/to-do/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"to-do",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reserva",
+			"item": [
+				{
+					"name": "Listar reserva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/reserva/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"reserva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data_check_in\": \"2021-10-30T12:00:00\",\n    \"data_check_out\": \"2021-11-01T12:00:00\",\n    \"imovel\": \"e88e2239-007a-4299-af0e-b70b28e9ff11\",\n    \"hospede\": \"978ed864-ccb0-4b70-b5b2-5b78783a700b\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/reserva/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"reserva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar reserva",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data_check_in\": \"2021-10-30T12:00:00\",\n    \"data_check_out\": \"2021-11-03T12:00:00\",\n    \"imovel\": \"e88e2239-007a-4299-af0e-b70b28e9ff11\",\n    \"hospede\": \"978ed864-ccb0-4b70-b5b2-5b78783a700b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/reserva/17492b38-a64b-497f-935d-ed7a30e63a39/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"reserva",
+								"17492b38-a64b-497f-935d-ed7a30e63a39",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar Reserva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/reserva/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"reserva",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar anfitriao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/reserva/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"reserva",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "to_do-anfitriao",
+			"item": [
+				{
+					"name": "Listar Anfitriões com agendas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/agenda-anfitriao/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"agenda-anfitriao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar anfitriao com agenda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/agenda-anfitriao/{{id}}/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"agenda-anfitriao",
+								"{{id}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8000"
+		}
+	]
+}
