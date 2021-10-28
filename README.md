@@ -1,6 +1,6 @@
-#Projeto API para Gerenciar Operações de Imoveis
+# Projeto API para Gerenciar Operações de Imoveis
 
-###Para esse projeto:
+### Para esse projeto:
 - Crie um virtual enviroment, ative o mesmo e utilize o seguinte comando para instalar as dependência do projeto. `pip install -r requirements.txt`
 - Foi utilizado Docker-Compose para este projeto, então para utilizar este projeto segue passo:
             - No terminal, vá até o diretorio deste projeto:
@@ -15,7 +15,7 @@
             - docker volume rm gerenciador-imoveis_database
 
 
-###Contexto:
+### Contexto:
 Em um empresa que gerencia operações de seus imóveis, é necessario estar o acompanhamento das operações, a figura principal é do anfitrião, responsável por realizar presencialmente o check in, checkout, limpeza e manutenção do imovel.
 Como é de muita importãncia a visualização das da agenda de maneira fácil e rápido foi o projeto foi implementado da seguinte forma:
   
@@ -41,7 +41,7 @@ serializers:
     - ToDo; (onde é gerenciado a agenda do Anfitrião)
 
 
-###Obs.: 
+### Obs.: 
 - Painel admin está pronto para uso;
 - Caso prefira usar o sqlite pode ser alterado o banco de dados que já está configurado no arquivo setting.py
         ''' 
@@ -51,7 +51,7 @@ serializers:
                             'NAME': BASE_DIR / 'db.sqlite3',
                       }
                 }"""
-
+                '''
            DATABASES = {
                         'default': {
                         'ENGINE': 'django.db.backends.postgresql_psycopg2',
